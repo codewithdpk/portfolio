@@ -13,8 +13,8 @@ export default function Portfolio() {
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] lg:max-w-5xl">
         <p className="flex w-full justify-center border-b bg-transparent pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4 lg:dark:bg-zinc-800/30">
-          Hello, I'm Deepak Suthar, a dedicated software engineer hailing from
-          Pune, India. With a solid 3-year track record, I've honed my skills
+          Hello, I am Deepak Suthar, a dedicated software engineer hailing from
+          Pune, India. With a solid 3-year track record, I have honed my skills
           across a diverse array of technologies, including Frontend and Backend
           development, DevOps practices, Blockchain, Web3, and the exciting
           realm of Open Source.
@@ -27,7 +27,7 @@ export default function Portfolio() {
           <br />
           <br />
           My expertise extends to the burgeoning world of Web3 applications.
-          I've successfully conceptualized, built, and maintained a variety of
+          I have successfully conceptualized, built, and maintained a variety of
           groundbreaking applications, ranging from NFT marketplaces to
           decentralized exchanges (DEXs), blockchain tools, and even
           cutting-edge DeFi protocols.
@@ -40,14 +40,14 @@ export default function Portfolio() {
           <br />
           <br />
           As a fervent enthusiast of startups, fintech, and emerging
-          technologies, I'm always at the forefront of innovation. My commitment
+          technologies, I am always at the forefront of innovation. My commitment
           to collaboration has led me to thrive alongside like-minded developers
-          and entrepreneurs. I'm an open book when it comes to contracts,
+          and entrepreneurs. I am an open book when it comes to contracts,
           freelancing, and developer advocacy, always eager to share my
           expertise and contribute to meaningful projects.
           <br />
           <br />
-          Let's connect and explore the boundless possibilities of tech
+          Lets connect and explore the boundless possibilities of tech
           together.
         </p>
       </div>
