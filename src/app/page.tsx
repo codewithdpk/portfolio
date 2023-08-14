@@ -1,45 +1,80 @@
-import Image from 'next/image'
+"use client";
 
-export default function Home() {
+import useToggleTheme from "@portfolio/theme/useToggleTheme";
+import Image from "next/image";
+import { Icon } from "@iconify/react";
+
+export default function Portfolio() {
+  const toggle = useToggleTheme();
+
   return (
     <>
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
+      <Image src="/me.png" height={240} width={240} alt="My Image" />
+
+      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1] lg:max-w-5xl">
+        <p className="flex w-full justify-center border-b bg-transparent pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:p-4 lg:dark:bg-zinc-800/30">
+          Hello, I am Deepak Suthar, a dedicated software engineer hailing from
+          Pune, India. With a solid 3-year track record, I have honed my skills
+          across a diverse array of technologies, including Frontend and Backend
+          development, DevOps practices, Blockchain, Web3, and the exciting
+          realm of Open Source.
+          <br /> <br />
+          My professional journey has been enriched by my involvement with
+          startups, particularly those specializing in Hyperlocal ecommerce
+          platforms. The dynamic startup environment has nurtured my ability to
+          adapt and thrive, fostering my knack for crafting solutions that cater
+          to the unique challenges these platforms present.
+          <br />
+          <br />
+          My expertise extends to the burgeoning world of Web3 applications.
+          I have successfully conceptualized, built, and maintained a variety of
+          groundbreaking applications, ranging from NFT marketplaces to
+          decentralized exchanges (DEXs), blockchain tools, and even
+          cutting-edge DeFi protocols.
+          <br />
+          <br />
+          Branch building and product growth are not just facets of my career
+          but a true passion. My experience has taught me the nuances of
+          nurturing projects from their infancy, watching them flourish into
+          impactful products.
+          <br />
+          <br />
+          As a fervent enthusiast of startups, fintech, and emerging
+          technologies, I am always at the forefront of innovation. My commitment
+          to collaboration has led me to thrive alongside like-minded developers
+          and entrepreneurs. I am an open book when it comes to contracts,
+          freelancing, and developer advocacy, always eager to share my
+          expertise and contribute to meaningful projects.
+          <br />
+          <br />
+          Lets connect and explore the boundless possibilities of tech
+          together.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="mt-24">
+        <h2 className={`mb-3 text-2xl font-semibold`}>Get in Touch</h2>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mt-12 grid text-center lg:grid-cols-4">
+        <a href="mail:codewithdeepak@yahoo.com" target="_blank">
+          <Icon icon="carbon:email" className="mx-4" />
+        </a>
+        <a href="https://twitter.com/0xDsuthar" target="_blank">
+          <Icon icon="teenyicons:twitter-outline" className="mx-4" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/deepak-suthar-7879071ab/"
+          target="_blank"
+        >
+          <Icon icon="ant-design:linkedin-filled" className="mx-4" />
+        </a>
+        <a href="https://github.com/codewithdpk" target="_blank">
+          <Icon icon="ant-design:github-filled" className="mx-4" />
+        </a>
+      </div>
+
+      {/* <div className="mt-24 mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -47,7 +82,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
+            Docs{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -64,7 +99,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
+            Learn{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -81,7 +116,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
+            Templates{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -98,7 +133,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
+            Deploy{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
               -&gt;
             </span>
@@ -107,7 +142,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </>
-  )
+  );
 }
