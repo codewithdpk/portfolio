@@ -1,11 +1,9 @@
 "use client";
 
-import useToggleTheme from "@portfolio/theme/useToggleTheme";
-import Image from "next/image";
 import { Icon } from "@iconify/react";
+import Image from "next/image";
 
 export default function Portfolio() {
-  const toggle = useToggleTheme();
 
   return (
     <>
